@@ -651,8 +651,20 @@ z-index: 2;
     top: 50%;
   }
 }
+
+/*SECCIÓN FORMULARIO*/
+
 .conteiner__mainFormulario{
   background-image: url(../recursos/fondoimg.jpg);
+  background-size: cover;
+
+}
+
+.banner-heroForm {
+  background-image: url(../recursos/bannerseccion.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-y: -45vh;
 }
 .titulo__delFormulario {
   color: rgb(255, 255, 255);
