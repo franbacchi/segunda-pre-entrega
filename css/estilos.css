@@ -651,7 +651,9 @@ z-index: 2;
     top: 50%;
   }
 }
-
+.conteiner__mainFormulario{
+  background-image: url(../recursos/fondoimg.jpg);
+}
 .titulo__delFormulario {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -715,6 +717,10 @@ footer h3 {
   background-image: linear-gradient(to top, #3ef7fd, rgb(211, 201, 254));
   margin-top: 50px;
   height: 20vh;
+}
+
+.footer__index h3 {
+  text-align: center;
 }
 
 /* DISPOSITIVOS MEDIANOS SECCIÓN MÚSICA*/
