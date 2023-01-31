@@ -1,0 +1,965 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #3ef7fd, rgb(211, 201, 254));
+}
+
+.box__logoTexto {
+  display: flex;
+  align-items: center;
+}
+
+.img__logo {
+  height: 60px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: rgb(255, 0, 212);
+}
+
+.video__conteiner {
+  display: flex;
+  height: 50vh;
+}
+
+.contenedor__textoIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20vh;
+  min-height: 10vh;
+  text-align: center;
+}
+
+.backgroundvideo {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 50vh;
+  filter: blur(5px);
+}
+
+.titulo__index {
+  color: white;
+}
+
+.box__subtituloIndex {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitulo__delIndex {
+  color: white;
+}
+
+.btn__boxIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-neon {
+  background-color: rgb(226, 23, 192);
+  position: relative;
+  display: inline block;
+  padding: 15px 30px;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.btn-neon:hover {
+  background-color: rgb(255, 0, 212);
+  box-shadow: 0 0 10px rgb(255, 0, 212), 0 0 40px rgb(255, 0, 212),
+    0 0 80px rgb(255, 0, 212);
+  transition-delay: 1s;
+}
+
+.btn-neon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgb(255, 0, 212));
+}
+
+.btn-neon:hover #span {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgb(255, 0, 212));
+}
+
+.btn-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition: delay 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgb(255, 0, 212));
+}
+
+.btn-neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition: delay 0.25s;
+}
+
+#span5 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgb(255, 0, 212));
+}
+
+.btn-neon:hover #span2 {
+  bottom: 100%;
+  transition: 1s;
+  transition: delay 0.75s;
+}
+
+.conteiner__mainOrigen{
+  background-color: rgb(213, 140, 188);
+}
+
+.conteiner__mainMusica {
+  background-color: rgb(213, 140, 188);
+  height: 200vh;
+}
+
+.banner-hero {
+  background-image: url(../recursos/bannerseccion.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-y: -45vh;
+}
+
+.banner-hero h1 {
+  color: rgb(57, 54, 54);
+  font-size: 1.3rem;
+  position: relative;
+  top: 35%;
+  margin-left: 50px;
+  padding-left: 50px;
+  
+}
+
+.container__albums {
+  height: 100vh;
+}
+
+/* Sección de música 3 tarjetas con texto */ 
+
+.tarjetasMusica {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__albums {
+  width: 100%;
+  display: flex;
+  max-width: 1230px;
+}
+
+.musicaTarjeta {
+  width: 100%;
+  height: 580px;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.musicaTarjeta img{
+    width: 100%;
+    height: 250px;
+}
+
+.musicaTarjeta:hover {
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.textoAlbum {
+    padding: 15px;
+    text-align: center;
+}
+
+.musicaTarjeta .textoAlbum p {
+line-height: 1.5;
+color: #6a6a6a;
+}
+
+.musicaTarjeta .textoAlbum h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.musicaTarjeta .textoAlbum a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color:  #2fb4cc;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+/* Otros albums uno al lado del otro */
+ 
+.seccion__fotosMusica {
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  top: 130vh;
+}
+
+.seccion__fotosMusica h1 {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.container__grilla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 100px 300px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.gallery-item:hover .image img {
+  transform: scale(1.5);
+}
+
+.gallery-item .text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  pointer-events: none;
+  z-index: 4;
+  transition: 0.3s ease-in-out;
+  -webkit-backdrop-filter: blur(5px) saturate(1.8);
+  backdrop-filter: blur(5px) saturate(1.8);
+}
+
+.gallery-item:hover .text {
+  opacity: 1;
+  animation: move-down 0.3s linear;
+  padding: 1em;
+  width: 100%;
+}
+
+.h-2 {
+  grid-row: span 2;
+}
+
+/* Comienzo estilos estética*/
+
+.hero__Estetica {
+  background-color: rgb(211, 201, 254);
+  height: 50vh;
+}
+
+.conteiner__esteticaText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw; 
+  padding-top: 100px;
+  
+}
+
+.animationText{
+  text-align: center;
+  text-transform:uppercase;
+  font-family: 'roboto' sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: #fff;
+  display: inline-block;
+  animation: fadeIn 1.5s forwards;
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.first {
+  display: inline-block;
+  animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-color: rgb(213, 140, 188);
+  z-index: 1;
+  position: relative;
+}
+
+.slide{
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.second{
+  font-weight: 100;
+  z-index: -1;
+  display: inline-block;
+  animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes firstspan {
+  0%{
+    transform: translateX(50%);
+  }
+  60%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes secondspan {
+  0%{
+    transform: translateX(-100%);
+  }
+  60%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.subtitulo__estetica{
+  position: relative;
+  top: -180%;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+
+}
+.conteiner__deEstatua {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 20px;
+  margin: 100px auto;
+}
+
+.boxImg {
+width: 250px;
+margin: 0 10px;
+transition: 1s;
+;
+}
+.img__estatua {
+ display: block;
+ width: 120%;
+}
+
+.boxImg:hover {
+transform: scale(1.3);
+z-index: 2;
+}
+
+.texto__estatua {
+  font-size: 25px;
+  padding-top: 90px;
+  margin-left: 68px;
+  color: rgb(255, 255, 255);
+  
+}
+
+.conteiner__mainEstetica {
+  background-color: rgb(213, 140, 188);
+  height: 208vh;
+}
+
+.seccion__fotosEstetica {
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.seccion__fotosEstetica h1 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.container__grilla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 100px 300px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.gallery-item:hover .image img {
+  transform: scale(1.5);
+}
+
+.gallery-item .text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  pointer-events: none;
+  z-index: 4;
+  transition: 0.3s ease-in-out;
+  -webkit-backdrop-filter: blur(5px) saturate(1.8);
+  backdrop-filter: blur(5px) saturate(1.8);
+}
+
+.gallery-item:hover .text {
+  opacity: 1;
+  animation: move-down 0.3s linear;
+  padding: 1em;
+  width: 100%;
+}
+
+.w-1 {
+  grid-column: span 1;
+}
+.w-2 {
+  grid-column: span 2;
+}
+.w-3 {
+  grid-column: span 3;
+}
+.w-4 {
+  grid-column: span 4;
+}
+.w-5 {
+  grid-column: span 5;
+}
+.w-6 {
+  grid-column: span 6;
+}
+
+.h-1 {
+  grid-row: span 1;
+}
+.h-2 {
+  grid-row: span 2;
+}
+.h-3 {
+  grid-row: span 3;
+}
+.h-4 {
+  grid-row: span 4;
+}
+.h-5 {
+  grid-row: span 5;
+}
+.h-6 {
+  grid-row: span 6;
+}
+
+/* DISPOSITIVOS MEDIANOS*/
+
+@media (max-width: 768px) {
+  .container__grilla {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .w-1,
+  .w-2,
+  .w-3,
+  .w-4,
+  .w-5,
+  .w-6 {
+    grid-column: span 1;
+  }
+}
+
+/* DISPOSITIVOS CHICOS*/
+
+@media (max-width: 420px) {
+  .container__grilla {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .w-1,
+  .w-2,
+  .w-3,
+  .w-4,
+  .w-5,
+  .w-6 {
+    grid-column: span 1;
+  }
+}
+
+@keyframes move-down {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 35%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+
+.texto__tituloOrigen {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 120px;
+  font-size: 35px;
+  -webkit-text-stroke: 2px black;
+}
+
+.texto__subtituloOrigen {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.conteiner__txtOrigen {
+  display: flex;
+  justify-content: center;
+}
+
+.texto__principalOrigen {
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.textoparahacercosas {
+  background-color: black;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+.titulo__delFormulario {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 120px;
+  font-size: 40px;
+  -webkit-text-stroke: 2px black;
+}
+
+.subtitulo__delFormulario {
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.formulario-conteiner {
+  font-size: 25px;
+  color: rgb(255, 246, 246);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.nombre__delFormulario {
+  padding: 5px;
+  width: 200px;
+  height: 40px;
+  border: 2px solid rgb(0, 153, 255);
+  border-radius: 3px;
+}
+
+.tel__delFormulario {
+  padding: 5px;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px solid rgb(0, 153, 255);
+  border-radius: 3px;
+}
+
+.mail__delFormulario {
+  padding: 5px;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px solid rgb(0, 153, 255);
+  border-radius: 3px;
+}
+
+footer {
+  background-image: linear-gradient(to top, #3ef7fd, rgb(211, 201, 254));
+  padding-top: 50px;
+  height: 20vh;
+}
+
+.footer__index {
+  background-image: linear-gradient(to top, #3ef7fd, rgb(211, 201, 254));
+  margin-top: 50px;
+  height: 20vh;
+}
+
+/* DISPOSITIVOS MEDIANOS SECCIÓN MÚSICA*/
+
+@media screen and (max-width: 768px){
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #3ef7fd, rgb(211, 201, 254));
+}
+
+.box__logoTexto {
+  display: flex;
+  align-items: center;
+}
+
+.img__logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+  
+.conteiner__mainMusica {
+  background-color: rgb(213, 140, 188);
+  height: 890vh;
+}
+
+.banner-hero {
+  background-image: url(../recursos/bannerseccion.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 5vw;
+  background-position-y: -25vh;
+}
+
+.banner-hero h1 {
+  color: rgb(57, 54, 54);
+  font-size: 0.8rem;
+  position: relative;
+  top: 35%;
+  right: 5%;
+  padding-left: 15px;
+  
+}
+
+.tarjetasMusica {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__albums {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 160%;
+  width: 70%;
+  height: 400%;
+}
+
+.musicaTarjeta {
+  width: 100%;
+  height: 580px;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.musicaTarjeta img{
+    width: 100%;
+    height: 250px;
+}
+
+.musicaTarjeta:hover {
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.textoAlbum {
+    padding: 15px;
+    text-align: center;
+}
+
+.musicaTarjeta .textoAlbum p {
+line-height: 1.5;
+color: #6a6a6a;
+}
+
+.musicaTarjeta .textoAlbum h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.musicaTarjeta .textoAlbum a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color:  #2fb4cc;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.seccion__fotosMusica {
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  top: 430vh;
+  left: 21%;
+}
+
+}
+
+/* DISPOSITIVOS CHICOS "SECCIÓN MÚSICA"*/
+
+@media screen and (max-width: 420px){
+
+  .header {
+    display: flex;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #3ef7fd, rgb(211, 201, 254));
+  }
+  
+  .box__logoTexto {
+    display: flex;
+    align-items: center;
+  }
+  
+  .img__logo {
+    height: 35px;
+    margin-right: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a {
+    position: relative;
+    top: -170%;
+    font-size: 12px;
+    font-weight: 600;
+    padding-right: 20px;
+    margin-left: 10px;
+  }
+    
+  .conteiner__mainMusica {
+    background-color: rgb(213, 140, 188);
+    height: 890vh;
+  }
+  
+  .banner-hero {
+    background-image: url(../recursos/bannerseccion.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position-x: 5vw;
+    background-position-y: 40vh;
+  }
+  
+  .banner-hero h1 {
+    color: rgb(57, 54, 54);
+    font-size: 0.8rem;
+    position: relative;
+    top: 25%;
+    right: 8%;
+    padding-left: 15px;
+    
+  }
+
+  .container__albums {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 160%;
+    right: 4.25%;
+    width: 80%;
+    height: 400%;
+  }
+
+  .seccion__fotosMusica {
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 420vh;
+    left: 0.8%;
+  }
+  }
+
+  /* DISPOSITIVOS MEDIANOS SECCIÓN ESTÉTICA*/
+
+@media screen and (max-width: 768px){
+  .conteiner__mainEstetica {
+    height: 540vh;
+  }
+  .animationText{
+    font-size: 30px;
+  }
+  .subtitulo__estetica{
+    font-size: 8px;
+    margin: 20px;
+  }
+  .texto__estatua{
+    font-size: 15px;
+  }
+}
+
+/* DISPOSITIVOS CHICOS "SECCIÓN ESTÉTICA"*/
+
+@media screen and (max-width: 420px){
+  .conteiner__mainEstetica {
+    height: 540vh;
+  }
+  .animationText{
+    position: relative;
+    top: -10%;
+    font-size: 15px;
+  }
+  .subtitulo__estetica{
+    position: relative;
+    top: -205%;
+    font-size: 7px;
+    margin: 5px;
+  }
+  .img__estatua {
+    position: relative;
+    top: 35%;
+    width: 190%;
+   }
+  .texto__estatua{
+    font-size: 15px;
+  }
+}
