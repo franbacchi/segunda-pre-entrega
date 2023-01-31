@@ -707,6 +707,10 @@ footer {
   height: 20vh;
 }
 
+footer h3 {
+  text-align: center;
+}
+
 .footer__index {
   background-image: linear-gradient(to top, #3ef7fd, rgb(211, 201, 254));
   margin-top: 50px;
