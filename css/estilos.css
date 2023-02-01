@@ -78,6 +78,8 @@ nav a:hover {
   color: white;
 }
 
+/*CSS BOTON del INDEX*/
+
 .btn__boxIndex {
   display: flex;
   justify-content: center;
@@ -552,7 +554,7 @@ color: #6a6a6a;
 .boxImg {
 width: 250px;
 margin: 0 10px;
-transition: 1s;
+
 ;
 }
 .img__estatua {
@@ -560,10 +562,6 @@ transition: 1s;
  width: 120%;
 }
 
-.boxImg:hover {
-transform: scale(1.3);
-z-index: 2;
-}
 
 .texto__estatua {
   font-size: 25px;
