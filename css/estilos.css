@@ -38,6 +38,11 @@ nav a:hover {
   color: rgb(255, 0, 212);
 }
 
+/*INICIO ORIGEN*/
+.bg-body-tertiary {
+  background-image: linear-gradient(to bottom, #3ef7fd, rgb(211, 201, 254));
+}
+
 .conteinerIndex{
   position: relative;
   height: 100vh;
@@ -459,6 +464,11 @@ color: #6a6a6a;
 
 /* Comienzo estilos estética*/
 
+.conteiner__mainEstetica {
+  background-color: rgb(213, 140, 188);
+  min-height: calc(280vh - 10vh - 20vh);
+}
+
 .hero__Estetica {
   background-color: rgb(211, 201, 254);
   height: 50vh;
@@ -583,10 +593,6 @@ margin: 0 10px;
   
 }
 
-.conteiner__mainEstetica {
-  background-color: rgb(213, 140, 188);
-  height: 208vh;
-}
 
 .seccion__fotosEstetica {
   margin: 20px;
@@ -738,9 +744,7 @@ margin: 0 10px;
 /*SECCIÓN FORMULARIO*/
 
 .conteiner__mainFormulario{
-  background-image: url(../recursos/fondoimg.jpg);
   background-size: cover;
-
 }
 
 .banner-heroForm {
@@ -749,6 +753,7 @@ margin: 0 10px;
   background-size: cover;
   background-position-y: -45vh;
 }
+
 .titulo__delFormulario {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -765,11 +770,9 @@ margin: 0 10px;
 }
 
 .formulario-conteiner {
-  font-size: 25px;
-  color: rgb(255, 246, 246);
-  -webkit-text-stroke: 1px rgb(0, 0, 0);
-  margin-left: 150px;
-  margin-top: 50px;
+  background-image: url(../recursos/fondoimg.jpg);
+  height: 80vh;
+  
 }
 
 .nombre__delFormulario {
