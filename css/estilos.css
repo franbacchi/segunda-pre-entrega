@@ -4,41 +4,32 @@
   font-family: sans-serif;
 }
 
-header {
-  display: flex;
-  height: 10vh;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+/*HEADER Origen, Música, Estética y Contactos*/
+.bg{
   background-image: linear-gradient(to bottom, #3ef7fd, rgb(211, 201, 254));
 }
 
-.box__logoTexto {
-  display: flex;
-  align-items: center;
+.navbar {
+  padding: 0;
 }
 
-.img__logo {
-  height: 60px;
-  margin-right: 10px;
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+@media(max-width: 768px){
+  .ul-bg{
+    background-color: rgb(213, 140, 188);
+  }
+}
+@media(max-width: 420px){
+  .ul-bg{
+    background-color: rgb(213, 140, 188);
+  }
 }
 
-nav a {
-  font-weight: 600;
-  padding-right: 20px;
-  margin-left: 10px;
-}
+/*INICIO INDEX*/
 
-nav a:hover {
-  color: rgb(255, 0, 212);
-}
-
-/*INICIO ORIGEN*/
 .bg-body-tertiary {
   background-image: linear-gradient(to bottom, #3ef7fd, rgb(211, 201, 254));
 }
