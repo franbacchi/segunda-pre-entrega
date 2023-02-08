@@ -17,15 +17,19 @@
   box-shadow: none;
 }
 
-@media(max-width: 768px){
-  .ul-bg{
+@media screen and (max-width:767px){
+  .ul-bg {
     background-color: rgb(213, 140, 188);
   }
 }
-@media(max-width: 420px){
-  .ul-bg{
+@media screen and (max-width:420px){
+  .ul-bg {
     background-color: rgb(213, 140, 188);
   }
+}
+
+nav .nav-item a:hover {
+  color: rgb(255, 0, 212) !important;
 }
 
 /*INICIO INDEX*/
