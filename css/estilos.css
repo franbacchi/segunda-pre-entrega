@@ -738,9 +738,6 @@ margin: 0 10px;
 
 /*SECCIÓN FORMULARIO*/
 
-.conteiner__mainFormulario{
-  background-size: cover;
-}
 
 .banner-heroForm {
   background-image: url(../recursos/bannerseccion.jpg);
@@ -766,35 +763,104 @@ margin: 0 10px;
 
 .formulario-conteiner {
   background-image: url(../recursos/fondoimg.jpg);
-  height: 80vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
-.nombre__delFormulario {
-  padding: 5px;
-  width: 200px;
-  height: 40px;
-  border: 2px solid rgb(0, 153, 255);
-  border-radius: 3px;
+.seccion__contacto {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.tel__delFormulario {
-  padding: 5px;
-  width: 200px;
-  height: 40px;
-  margin-top: 20px;
-  border: 2px solid rgb(0, 153, 255);
-  border-radius: 3px;
+.contact__info {
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  margin-right: 30px;
+  font-size: 18px;
 }
 
-.mail__delFormulario {
-  padding: 5px;
-  width: 200px;
-  height: 40px;
-  margin-top: 20px;
-  border: 2px solid rgb(0, 153, 255);
-  border-radius: 3px;
+.contact__info i {
+  margin-right: 20px;
+  font-size: 25px;
 }
+
+.contact__form{
+max-width: 700px;
+margin-right: 50px;
+}
+
+.contact__info .contact__form {
+  flex: 1;
+}
+
+.contact__form h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact__form .text-box {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact__form .text-box:first-child {
+  margin-right: 15px;
+}
+
+.contact__form textarea{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact__form .send-btn {
+float: right;
+background:rgb(255, 0, 212);
+color: #fff;
+border:none;
+width: 120px;
+height: 40px;
+font-size: 15px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 2px;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+transition-property: background;
+}
+
+
+/*Footer*/
 
 .footer__index {
   background-image: linear-gradient(to top, #3ef7fd, rgb(211, 201, 254));
