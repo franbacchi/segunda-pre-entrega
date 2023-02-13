@@ -878,28 +878,8 @@ transition-property: background;
     margin-left: 55px;
   }
 }
- 
 
 /*Footer*/
-
-.footer__index {
-  background-image: linear-gradient(to top, #3ef7fd, rgb(211, 201, 254));
-  height: 20vh;
-}
-
-.footer__index h3 {
-  text-align: center;
-}
-
-footer {
-  background-image: linear-gradient(to top, #3ef7fd, rgb(211, 201, 254));
-  padding-top: 40px;
-  height: 20vh;
-}
-
-footer h3 {
-  text-align: center;
-}
 
 footer {
   width: 100%;
