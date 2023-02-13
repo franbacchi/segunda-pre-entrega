@@ -901,7 +901,37 @@ footer h3 {
   text-align: center;
 }
 
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-image: linear-gradient(to top, #3ef7fd, rgb(211, 201, 254));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.logoFooter{
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.social-icons-conteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  color: rgb(255, 0, 212);
+  opacity: 0.3;
+  text-align: center;
+}
 /* DISPOSITIVOS MEDIANOS SECCIÓN MÚSICA*/
 
 @media screen and (max-width: 768px){
